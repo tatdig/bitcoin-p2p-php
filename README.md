@@ -1,4 +1,4 @@
-# bitcoin-p2p-php
+# tdcoin-p2p-php
 Bitcoin P2P network connections using ReactPHP
 
 [![Build Status](https://travis-ci.org/Bit-Wasp/bitcoin-p2p-php.svg?branch=master)](https://travis-ci.org/Bit-Wasp/bitcoin-p2p-php)
