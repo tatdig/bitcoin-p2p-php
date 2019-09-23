@@ -11,7 +11,7 @@ abstract class NetworkSettings implements NetworkSettingsInterface, MutableNetwo
     /**
      * @var int
      */
-    protected $defaultP2PPort = 8333;
+    protected $defaultP2PPort = 9901;
 
     /**
      * @var int

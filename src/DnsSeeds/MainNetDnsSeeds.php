@@ -8,14 +8,23 @@ class MainNetDnsSeeds extends DnsSeedList
 {
     public function __construct()
     {
+/*    
+        vSeeds.emplace_back("seeds.nigez.com");
+                vSeeds.emplace_back("seeds2.nigez.com");
+                        vSeeds.emplace_back("seeds3.nigez.com");
+                                vSeeds.emplace_back("seeds4.nigez.com");
+                                        vSeeds.emplace_back("seeds5.nigez.com");
+                                                vSeeds.emplace_back("seeds6.nigez.com");
+                                                
+    */
         parent::__construct([
-            'seed.bitcoin.sipa.be',
-            'dnsseed.bluematt.me',
-            'dnsseed.bitcoin.dashjr.org',
-            'seed.bitcoinstats.com',
+            'seeds.nigez.com',
+            'seeds2.nigez.com',
+            'seeds3.nigez.com',
+            'seeds4.nigez.com',
 //            'bitseed.xf2.org',
-            'seed.bitnodes.io',
-            "seed.bitcoin.jonasschnelli.ch"
+            'seeds5.nigez.com',
+            'seeds6.nigez.com'
         ]);
     }
 }
