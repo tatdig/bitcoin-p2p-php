@@ -13,7 +13,7 @@ class MainnetSettingsTest extends TestCase
     public function testSettings()
     {
         $settings = new MainnetSettings();
-        $this->assertEquals(8333, $settings->getDefaultP2PPort());
+        $this->assertEquals(9901, $settings->getDefaultP2PPort());
         $this->assertInstanceOf(MainNetDnsSeeds::class, $settings->getDnsSeedList());
     }
 }

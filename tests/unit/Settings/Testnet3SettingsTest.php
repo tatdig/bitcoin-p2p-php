@@ -13,7 +13,7 @@ class Testnet3SettingsTest extends TestCase
     public function testSettings()
     {
         $settings = new Testnet3Settings();
-        $this->assertEquals(18333, $settings->getDefaultP2PPort());
+        $this->assertEquals(19901, $settings->getDefaultP2PPort());
         $this->assertInstanceOf(TestNetDnsSeeds::class, $settings->getDnsSeedList());
     }
 }

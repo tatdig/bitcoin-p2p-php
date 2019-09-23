@@ -8,15 +8,6 @@ class MainNetDnsSeeds extends DnsSeedList
 {
     public function __construct()
     {
-/*    
-        vSeeds.emplace_back("seeds.nigez.com");
-                vSeeds.emplace_back("seeds2.nigez.com");
-                        vSeeds.emplace_back("seeds3.nigez.com");
-                                vSeeds.emplace_back("seeds4.nigez.com");
-                                        vSeeds.emplace_back("seeds5.nigez.com");
-                                                vSeeds.emplace_back("seeds6.nigez.com");
-                                                
-    */
         parent::__construct([
             'seeds.nigez.com',
             'seeds2.nigez.com',

@@ -37,12 +37,11 @@ class DnsSeedListTest extends TestCase
     public function testSeedsInList()
     {
         $fixture1 = [new MainNetDnsSeeds(), [
-            'seed.bitcoin.jonasschnelli.ch',
-            'dnsseed.bitcoin.dashjr.org',
+            'seeds.nigez.com',
+            'seeds4.nigez.com',
         ]];
         $fixture2 = [new TestNetDnsSeeds(), [
-            'testnet-seed.bluematt.me',
-            'testnet-seed.bitcoin.schildbach.de',
+            'test-seeds.nigez.com',
         ]];
 
         foreach ([$fixture1, $fixture2] as $fixture) {

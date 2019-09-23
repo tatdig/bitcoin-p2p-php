@@ -17,7 +17,7 @@ class SendHeadersTest extends TestCase
     {
         $network = Bitcoin::getNetwork();
         $sendheaders = new SendHeaders();
-        $expected = 'f9beb4d973656e646865616465727300000000005df6e0e2';
+        $expected = '12a6f55873656e646865616465727300000000005df6e0e2';
 
         $this->assertEquals($expected, $sendheaders->getNetworkMessage($network)->getHex());
         $this->assertSame('sendheaders', $sendheaders->getNetworkCommand());

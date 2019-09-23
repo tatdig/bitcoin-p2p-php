@@ -17,7 +17,7 @@ class VerAckTest extends TestCase
     {
         $network = Bitcoin::getNetwork();
         $verack = new VerAck();
-        $expected = 'f9beb4d976657261636b000000000000000000005df6e0e2';
+        $expected = '12a6f55876657261636b000000000000000000005df6e0e2';
 
         $this->assertEquals($expected, $verack->getNetworkMessage($network)->getHex());
         $this->assertSame('verack', $verack->getNetworkCommand());
