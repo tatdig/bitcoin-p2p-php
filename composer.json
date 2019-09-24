@@ -27,7 +27,19 @@
   "repositories": [
           {
               "type": "vcs",
+              "url": "https://github.com/tatdig/bech32.git"
+          },
+          {
+              "type": "vcs",
               "url": "https://github.com/tatdig/buffertools-php.git"
+          },
+          {
+              "type": "vcs",
+              "url": "https://github.com/tatdig/secp256k1-php.git"
+          },
+          {
+              "type": "vcs",
+              "url": "https://github.com/tatdig/tdcoinconsensus-php.git"
           },
           {
               "type": "vcs",
