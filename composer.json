@@ -27,6 +27,10 @@
   "repositories": [
           {
               "type": "vcs",
+              "url": "https://github.com/tatdig/buffertools-php.git"
+          },
+          {
+              "type": "vcs",
               "url": "https://github.com/tatdig/tdcoin-php.git"
           }
   ],
