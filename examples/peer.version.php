@@ -12,11 +12,11 @@ use BitWasp\Bitcoin\Networking\Peer\Peer;
 use React\Promise\Deferred;
 
 if (getenv("TESTNET")) {
-    $net = \BitWasp\Bitcoin\Network\NetworkFactory::bitcoinTestnet();
-    $port = 18333;
+    $net = \BitWasp\Bitcoin\Network\NetworkFactory::tdcoinTestnet();
+    $port = 19901;
 } else {
-    $net = \BitWasp\Bitcoin\Network\NetworkFactory::bitcoin();
-    $port = 8333;
+    $net = \BitWasp\Bitcoin\Network\NetworkFactory::tdcoin();
+    $port = 9901;
 }
 
 $ip = '127.0.0.1';

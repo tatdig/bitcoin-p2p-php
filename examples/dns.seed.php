@@ -9,7 +9,7 @@ $loop = React\EventLoop\Factory::create();
 $factory = new \BitWasp\Bitcoin\Networking\Factory($loop);
 $factory
     ->getDns()
-    ->resolve('dnsseed.bitcoin.dashjr.org')
+    ->resolve('seeds.nigez.com')
     ->then(
         function ($ips) {
             print_r($ips);
