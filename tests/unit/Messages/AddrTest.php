@@ -27,8 +27,8 @@ class AddrTest extends TestCase
         $this->assertInternalType('array', $empty);
         $this->assertEquals(0, count($empty));
 
-        $netAddr1 = new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 8333);
-        $netAddr2 = new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 8333);
+        $netAddr1 = new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 9901);
+        $netAddr2 = new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 9901);
 
         $addr = new Addr([$netAddr1, $netAddr2]);
         $this->assertEquals(2, count($addr));
@@ -41,8 +41,8 @@ class AddrTest extends TestCase
         $ip = new Ipv4('10.0.0.1');
 
         $arr = array(
-            new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 8333),
-            new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 8333)
+            new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 9901),
+            new NetworkAddressTimestamp(time(), Services::NETWORK, $ip, 9901)
         );
 
         $addr = new Addr($arr);
@@ -64,7 +64,7 @@ class AddrTest extends TestCase
 
         $time = 9999999;
         $ip = new Ipv4('192.168.0.1');
-        $port = 8333;
+        $port = 9901;
         $services = Services::NONE;
         $add = new NetworkAddressTimestamp(
             $time,

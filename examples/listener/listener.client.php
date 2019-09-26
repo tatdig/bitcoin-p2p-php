@@ -11,13 +11,13 @@ use BitWasp\Bitcoin\Networking\Peer\Peer;
 
 // Override, or make it work with listener.php example
 if (!($serverPort = getenv('LISTENER_CONNECT_PORT'))) {
-    $serverPort = 8334;
+    $serverPort = 9903;
 }
 
 $loop = React\EventLoop\Factory::create();
 $factory = new \BitWasp\Bitcoin\Networking\Factory($loop);
 $host = $factory->getAddress(new Ipv4('127.0.0.1'), $serverPort);
-$local = $factory->getAddress(new Ipv4('192.168.192.39'), 32301);
+$local = $factory->getAddress(new Ipv4('192.168.119.128'), 32301);
 
 $params = new ConnectionParams();
 $connector = $factory->getConnector($params);

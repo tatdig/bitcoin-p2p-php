@@ -13,6 +13,7 @@ $factory
     ->then(
         function ($ips) {
             print_r($ips);
+            echo PHP_EOL;
         }
     );
 

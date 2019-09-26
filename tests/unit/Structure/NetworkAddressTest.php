@@ -18,7 +18,7 @@ class NetworkAddressTest extends TestCase
      */
     public function getVectors(): array
     {
-        $port = 8333;
+        $port = 9901;
         return [
             [new Ipv4("10.0.0.1"), $port,  "0100000000000000"."00000000000000000000ffff0a000001208d"],
             [new Ipv4("127.0.0.1"), $port, "0100000000000000"."00000000000000000000ffff7f000001208d"]
@@ -44,7 +44,7 @@ class NetworkAddressTest extends TestCase
     public function testNetworkAddressTimestamp()
     {
         $ip = new Ipv4('127.0.0.1');
-        $port = 8333;
+        $port = 9901;
         $time = time();
         $services = Services::NETWORK;
         $from = new NetworkAddressTimestamp($time, $services, $ip, $port);

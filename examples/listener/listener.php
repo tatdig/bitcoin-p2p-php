@@ -20,7 +20,7 @@ $listener = $factory->getListener($params, $serverAddr);
 $listener->on('connection', function (Peer $peer) {
     $peer->on('getaddr', function (Peer $peer) {
         $peer->addr([
-            new NetworkAddressTimestamp(time(), Services::NONE, new Ipv4('88.88.88.88'), 8333)
+            new NetworkAddressTimestamp(time(), Services::NONE, new Ipv4('88.88.88.88'), 9901)
         ]);
     });
 });
