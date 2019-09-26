@@ -1,5 +1,5 @@
 {
-  "name": "tatdig/tdcoin-p2p",
+  "name": "tatdig/tdcoin-p2p-php",
   "description": "Implementation of the bitcoin protocol using ReactPHP",
   "type": "library",
   "homepage": "https://github.com/bit-wasp/node-php",
